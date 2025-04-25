@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .btn{
+            /* @apply bg-gray-200 hover:bg-gray-300 p-4 rounded font-semibold; */
+            background: hsl(0, 0%, 90%);
+            padding: 10px;
+            border-radius: 2px;
+            font-weight: 300;
+            
+        }
+        .btn:hover{
+            background: hsl(0, 0%, 70%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-2xl rounded-xl p-6 w-80">
+        <div id="display" class="bg-black text-white text-2xl text-right px-4 py-3 rounded mb-4 overflow-x-auto">0</div>
+        <div class="grid grid-cols-4 gap-3 text-xl">
+            <button class="btn bg-red-500 text-white" >C</button>
+            <button class="btn ">←</button>
+            <button class="btn">%</button>
+            <button class="btn bg-blue-500 text-white">/</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn bg-blue-500 text-white">x</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn bg-blue-500 text-white">-</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn bg-blue-500 text-white">+</button>
+
+            <button class="btn col-span-2">0</button>
+            <button class="btn">.</button>
+            <button class="btn bg-green-500 text-white">=</button>
+            
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
